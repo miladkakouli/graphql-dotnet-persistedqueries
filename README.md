@@ -1,6 +1,6 @@
 # graphql-dotnet-persistedqueries
 
-Persisted Queries for Graphql-Dotnet
+Persisted Queries for [Graphql-Dotnet](https://github.com/graphql-dotnet/graphql-dotnet)
 
 ## Usage
 ```csharp
