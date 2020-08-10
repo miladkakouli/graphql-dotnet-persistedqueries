@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Persisted Queries for Graphql-Dotnet</Description>
+    <Authors>Milad Kakouli</Authors>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/miladkakouli/graphql-dotnet-persistedqueries</RepositoryUrl>
+    <PackageTags>PersistedQueries Graphql graphql-dotnet</PackageTags>
+    <PackageProjectUrl>https://github.com/miladkakouli/graphql-dotnet-persistedqueries</PackageProjectUrl>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,6 +17,13 @@
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="1.1.0" />
     <PackageReference Include="Microsoft.Net.Http.Headers" Version="2.2.8" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
