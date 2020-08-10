@@ -9,7 +9,18 @@
     <projectUrl>https://github.com/miladkakouli/graphql-dotnet-persistedqueries</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>First Release.</releaseNotes>
+    <releaseNotes>Add dependencies to nuget file</releaseNotes>
+    <summary>Persisted Queries for Graphql-Dotnet</summary>
     <copyright>Copyright 2020</copyright>
+	<tags>PersistedQueries Graphql graphql-dotnet</tags>
+	<dependencies>
+	    <group targetFramework=".NETStandard2.0">
+			<dependency id="GraphQL.Server.Transports.AspNetCore" version="3.4.0" />
+			<dependency id="Microsoft.AspNetCore.WebUtilities" version="1.1.0" />
+			<dependency id="Microsoft.Extensions.Caching.Abstractions" version="1.1.0" />
+			<dependency id="Microsoft.Net.Http.Headers" version="2.2.8" />
+			<dependency id="Newtonsoft.Json" version="12.0.3" />
+		</group>
+	</dependencies>
   </metadata>
 </package>
