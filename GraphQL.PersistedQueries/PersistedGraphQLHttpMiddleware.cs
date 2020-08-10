@@ -26,21 +26,21 @@ namespace GraphQL.PersistedQueries
         private const string GraphQLContentType = "application/graphql";
         private const string FormUrlEncodedContentType = "application/x-www-form-urlencoded";
         private const string MultipartFormData = "multipart/form-data";
-        private readonly PathString _path;
+        //private readonly PathString _path;
 
-        public PersistedGraphQLHttpMiddleware(RequestDelegate next,string path)
+        public PersistedGraphQLHttpMiddleware(RequestDelegate next/*,string path*/)
         {
             _next = next;
-            _path = new PathString(path);
+            //_path = new PathString(path);
         }
 
         public async Task InvokeAsync(HttpContext context, IDistributedCache cacheProvider, IDocumentWriter writer)
         {
-            if (!IsGraphQLRequest(context))
-            {
-                await _next.Invoke(context);
-                return;
-            }
+            //if (!IsGraphQLRequest(context))
+            //{
+            //    await _next.Invoke(context);
+            //    return;
+            //}
 
             var httpRequest = context.Request;
             try
@@ -113,10 +113,10 @@ namespace GraphQL.PersistedQueries
             }
         }
 
-        private bool IsGraphQLRequest(HttpContext context)
-        {
-            return context.WebSockets.IsWebSocketRequest || context.Request.Path.StartsWithSegments(_path);
-        }
+        //private bool IsGraphQLRequest(HttpContext context)
+        //{
+        //    return context.WebSockets.IsWebSocketRequest || context.Request.Path.StartsWithSegments(_path);
+        //}
 
         private static async Task<GraphQLPersistedRequest> DeserializeFormDataAsync(MultipartReader reader)
         {
