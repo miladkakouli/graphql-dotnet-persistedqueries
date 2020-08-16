@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/miladkakouli/graphql-dotnet-persistedqueries</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Add dependencies to nuget file</releaseNotes>
+    <releaseNotes>Some Correction CacheQueryWatcher</releaseNotes>
     <summary>Persisted Queries for Graphql-Dotnet</summary>
     <copyright>Copyright 2020</copyright>
 	<tags>PersistedQueries Graphql graphql-dotnet</tags>

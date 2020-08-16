@@ -23,10 +23,10 @@ namespace GraphQL.PersistedQueries
         public void RegisterCacheQueryWatcher()
         {
             var _fileSystemWatcher = new FileSystemWatcher();
-            _fileSystemWatcher.Path = Environment.CurrentDirectory;
+            _fileSystemWatcher.Path = Path.GetDirectoryName(_fileAddress);
             _fileSystemWatcher.NotifyFilter = NotifyFilters.LastWrite;
 
-            _fileSystemWatcher.Filter = _fileAddress;
+            _fileSystemWatcher.Filter = Path.GetFileName(_fileAddress);
             _fileSystemWatcher.Changed += OnChanged;
             _fileSystemWatcher.EnableRaisingEvents = true;
         }

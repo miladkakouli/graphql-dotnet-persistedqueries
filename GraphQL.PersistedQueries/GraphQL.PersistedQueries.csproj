@@ -9,7 +9,7 @@
     <PackageTags>PersistedQueries Graphql graphql-dotnet</PackageTags>
     <PackageProjectUrl>https://github.com/miladkakouli/graphql-dotnet-persistedqueries</PackageProjectUrl>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
