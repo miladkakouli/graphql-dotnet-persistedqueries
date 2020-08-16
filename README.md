@@ -19,6 +19,7 @@ Persisted Queries for [Graphql-Dotnet](https://github.com/graphql-dotnet/graphql
       }
       public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
       {
+        app.ApplicationServices.GetService<CacheQueryMonitor>();
         app.Use(next => context => {
           context.Request.EnableBuffering();
           return next(context);
